@@ -1,4 +1,4 @@
-alert("On commence ?")
+alert("On commence ?");
 /////////////////
 // Exercise 1.1
 /////////////////
@@ -97,6 +97,34 @@ function factorielle(n) {
 }
 let x = factorielle(nbpartants) / factorielle(nbpartants - nbjoues);
 alert("Une chance de gagner sur : " + x);
+
+/////////////////
+// Exercise 2.1
+/////////////////
+let arr = [];
+let loopcounter = 0;
+let consecutive = 1;
+console.log("Test console");
+// debugger;
+
+while (loopcounter == loopcounter) {
+    loopcounter++;
+    arr.push(prompt("Enter a number (0 to finish)", "0"));
+    let nber = parseInt(arr[loopcounter - 1], 10);
+    alert("nber :" + nber);
+    if (nber == 0) break;
+    let currentnb = 0;
+    let previousnb = 0;
+    if (loopcounter >= 2) {
+        currentnb = parseInt(arr[loopcounter - 1], 10);
+        previousnb = parseInt(arr[loopcounter - 2], 10);
+        if (currentnb !== previousnb + 1) { consecutive = 0; }
+    }
+}
+if (consecutive == 1)
+    alert("Les nombres sont consécutifs");
+else
+    alert("Les nombres ne sont pas consécutifs");
 
 /////////////////
 // Fin
