@@ -104,14 +104,12 @@ alert("Une chance de gagner sur : " + x);
 let arr = [];
 let loopcounter = 0;
 let consecutive = 1;
-console.log("Test console");
 // debugger;
 
 while (loopcounter == loopcounter) {
     loopcounter++;
     arr.push(prompt("Enter a number (0 to finish)", "0"));
     let nber = parseInt(arr[loopcounter - 1], 10);
-    alert("nber :" + nber);
     if (nber == 0) break;
     let currentnb = 0;
     let previousnb = 0;
@@ -127,6 +125,43 @@ else
     alert("Les nombres ne sont pas consécutifs");
 
 /////////////////
+// Exercise 2.2
+/////////////////
+let arr = [];
+let loopcounter = 0;
+let consecutive = 1;
+// debugger;
+
+// Saisie du tableau
+while (loopcounter == loopcounter) {
+    loopcounter++;
+    arr.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
+    let nber = parseInt(arr[loopcounter - 1], 10);
+    if (nber == 0) break;
+}
+arr.pop();
+let len = arr.length;
+alert(len + " nombres ont été saisis.");
+
+// Tri bulle du tableau
+let valj = 0;
+let valjplus = 0;
+let valbuf = 0;
+debugger;
+for (let i = len; i > 0; i--) {
+    for (let j = 0; j < i - 1; j++) {
+        if (arr[j] <= arr[j + 1]) continue;
+        valj = arr[j];
+        valjplus = arr[j + 1];
+        arr[j + 1] = valj;
+        arr[j] = valjplus;
+    }
+}
+
+// Affichage du tableau
+alert(arr);
+
+///////////////
 // Fin
 /////////////////
-alert("C'est fini !")
+alert("C'est fini !");
