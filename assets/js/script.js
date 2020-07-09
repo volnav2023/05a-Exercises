@@ -42,32 +42,62 @@ nber6 = parseInt(prompt("Saisir un nombre", "0"), 10);
 for (let index = 1; index < 11; index++) {
     alert(nber6 + " x " + index + " = " + nber6 * index);
 }
+
 /////////////////
 // Exercise 1.6
 /////////////////
-let nbentered = parseInt(prompt("Saisir un nombre", "0"), 10);
+let nbentered1 = parseInt(prompt("Saisir un nombre", "0"), 10);
 let loopcounter8 = 1;
-let cumulative = 0;
+let cumulative1 = 0;
 
-while (loopcounter8 <= nbentered) {
-    cumulative = cumulative + loopcounter8;
+while (loopcounter8 <= nbentered1) {
+    cumulative1 = cumulative1 + loopcounter8;
     loopcounter8++;
-}git
-alert(cumulative);
-/////////////////
-// Exercise 1.7
-/////////////////
-let nbentered = parseInt(prompt("Saisir un nombre", "0"), 10);
-let loopcounter8 = nbentered;
-let cumulative = 1;
-
-while (loopcounter8 > 0) {
-    cumulative = cumulative * loopcounter8;
-    loopcounter8--;
-    // alert(loopcounter8);
-    // alert(cumulative);
 }
-alert("Factorielle : " + cumulative);
+alert(cumulative1);
+
+/////////////////
+// Exercise 1.7a
+/////////////////
+let nbentered2 = parseInt(prompt("Saisir un nombre", "0"), 10);
+let loopcounter9 = nbentered2;
+let cumulative2 = 1;
+
+while (loopcounter9 > 0) {
+    cumulative2 = cumulative2 * loopcounter8;
+    loopcounter9--;
+}
+alert("Factorielle : " + cumulative2);
+
+/////////////////
+// Exercise 1.7b
+/////////////////
+var arr = [];
+for (var i = 0; i < 5; i++)
+    arr.push(prompt("Enter a number", "0"));
+alert("Le plus grand est : " + Math.max(...arr));
+
+/////////////////
+// Exercise 1.8
+/////////////////
+let nbpartants = parseInt(prompt("Saisir nombre de partants : ", "0"), 10);
+let nbjoues = parseInt(prompt("Saisir nombre de joués : ", "0"), 10);
+
+function factorielle(n) {
+    let loopcounter = n;
+    let cumulative = 1;
+
+    while (loopcounter > 0) {
+        cumulative = cumulative * loopcounter;
+        loopcounter--;
+    }
+    return cumulative;
+
+
+}
+let x = factorielle(nbpartants) / factorielle(nbpartants - nbjoues);
+alert("Une chance de gagner sur : " + x);
+
 /////////////////
 // Fin
 /////////////////
