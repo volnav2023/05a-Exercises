@@ -195,43 +195,70 @@ alert("On commence ?");
 // // Affichage du tableau
 // alert(arr2);
 
+// /////////////////
+// // Exercise 2.3
+// /////////////////
+// let arrini = [];
+// let arrinv = [];
+// let loopcounter3 = 0;
+
+// // Saisie du tableau
+// while (loopcounter3 == loopcounter3) {
+//     loopcounter3++;
+//     arrini.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
+//     let nber = parseInt(arrini[loopcounter3 - 1], 10);
+//     if (nber == 0) break;
+// }
+// arrini.pop();
+// let lenini = arrini.length;
+// alert(lenini + " nombres ont été saisis.");
+
+// // // Inversion du tableau (méthode de array)
+// // debugger;
+// // arrini.reverse()
+
+// // Inversion du tableau (algorithme)
+// debugger;
+// for (let i = lenini - 1; i >= 0; i--) {
+//     arrinv.push(arrini[i])
+// }
+// // Ré-écriture dans le tableau d'origine
+// for (let i = 0; i < lenini; i++) {
+//     arrini.pop()
+// }
+// for (let i = 0; i < lenini; i++) {
+//     arrini.push(arrinv[i])
+// }
+
+// // Affichage du tableau
+// alert(arrini);
+
 /////////////////
-// Exercise 2.3
+// Exercise 2.4
 /////////////////
-let arrini = [];
-let arrinv = [];
-let loopcounter3 = 0;
+let arr4 = [];
+let loopcounter4 = 0;
 
 // Saisie du tableau
-while (loopcounter3 == loopcounter3) {
-    loopcounter3++;
-    arrini.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
-    let nber = parseInt(arrini[loopcounter3 - 1], 10);
+while (loopcounter4 == loopcounter4) {
+    loopcounter4++;
+    arr4.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
+    let nber = parseInt(arr4[loopcounter4 - 1], 10);
     if (nber == 0) break;
 }
-arrini.pop();
-let lenini = arrini.length;
+arr4.pop();
+let lenini = arr4.length;
 alert(lenini + " nombres ont été saisis.");
+alert(arr4);
 
-// // Inversion du tableau (méthode de array)
-// debugger;
-// arrini.reverse()
+let indexsup = prompt("Index de la valeur à supprimer :", "0");
 
-// Inversion du tableau (algorithme)
+// Suppression de la valeur
 debugger;
-for (let i = lenini - 1; i >= 0; i--) {
-    arrinv.push(arrini[i])
-}
-// Ré-écriture dans le tableau d'origine
-for (let i = 0; i < lenini; i++) {
-    arrini.pop()
-}
-for (let i = 0; i < lenini; i++) {
-    arrini.push(arrinv[i])
-}
+arr4.splice(indexsup,1);
 
-// Affichage du tableau
-alert(arrini);
+alert("Tableau édité :");
+alert(arr4);
 
 ///////////////
 // Fin
