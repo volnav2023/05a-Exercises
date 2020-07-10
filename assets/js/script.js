@@ -1,165 +1,199 @@
+// debugger;
 alert("On commence ?");
-/////////////////
-// Exercise 1.1
-/////////////////
-let nber1 = 4;
-while (nber1 < 1 || nber1 > 3) {
-    nber1 = parseInt(prompt("Saisir un nombre entre 1 et 3", "0"), 10);
-}
-/////////////////
-// Exercise 1.2
-/////////////////
-let nber2 = 4;
-while (nber2 < 10 || nber2 > 20) {
-    nber2 = parseInt(prompt("Saisir un nombre entre 10 et 20", "0"), 10);
-    if (nber2 > 20) { alert("Plus petit !") }
-    if (nber2 < 10) { alert("Plus grand !") }
-}
-/////////////////
-// Exercise 1.3
-/////////////////
-let nber3 = 4;
-nber3 = parseInt(prompt("Saisir un nombre", "0"), 10);
-let nber4 = nber3;
-while (nber4 < nber3 + 10) {
-    nber4++;
-    alert(nber4);
-}
-/////////////////
-// Exercise 1.4
-/////////////////
-let nber5 = 4;
-nber5 = parseInt(prompt("Saisir un nombre", "0"), 10);
-for (let index = 1; index < 11; index++) {
-    nber5++;
-    alert(nber5);
-}
-/////////////////
-// Exercise 1.5
-/////////////////
-let nber6 = 4;
-nber6 = parseInt(prompt("Saisir un nombre", "0"), 10);
-for (let index = 1; index < 11; index++) {
-    alert(nber6 + " x " + index + " = " + nber6 * index);
-}
+// /////////////////
+// // Exercise 1.1
+// /////////////////
+// let nber1 = 4;
+// while (nber1 < 1 || nber1 > 3) {
+//     nber1 = parseInt(prompt("Saisir un nombre entre 1 et 3", "0"), 10);
+// }
+// /////////////////
+// // Exercise 1.2
+// /////////////////
+// let nber2 = 4;
+// while (nber2 < 10 || nber2 > 20) {
+//     nber2 = parseInt(prompt("Saisir un nombre entre 10 et 20", "0"), 10);
+//     if (nber2 > 20) { alert("Plus petit !") }
+//     if (nber2 < 10) { alert("Plus grand !") }
+// }
+// /////////////////
+// // Exercise 1.3
+// /////////////////
+// let nber3 = 4;
+// nber3 = parseInt(prompt("Saisir un nombre", "0"), 10);
+// let nber4 = nber3;
+// while (nber4 < nber3 + 10) {
+//     nber4++;
+//     alert(nber4);
+// }
+// /////////////////
+// // Exercise 1.4
+// /////////////////
+// let nber5 = 4;
+// nber5 = parseInt(prompt("Saisir un nombre", "0"), 10);
+// for (let index = 1; index < 11; index++) {
+//     nber5++;
+//     alert(nber5);
+// }
+// /////////////////
+// // Exercise 1.5
+// /////////////////
+// let nber6 = 4;
+// nber6 = parseInt(prompt("Saisir un nombre", "0"), 10);
+// for (let index = 1; index < 11; index++) {
+//     alert(nber6 + " x " + index + " = " + nber6 * index);
+// }
+
+// /////////////////
+// // Exercise 1.6
+// /////////////////
+// let nbentered1 = parseInt(prompt("Saisir un nombre", "0"), 10);
+// let loopcounter8 = 1;
+// let cumulative1 = 0;
+
+// while (loopcounter8 <= nbentered1) {
+//     cumulative1 = cumulative1 + loopcounter8;
+//     loopcounter8++;
+// }
+// alert(cumulative1);
+
+// /////////////////
+// // Exercise 1.7a
+// /////////////////
+// let nbentered2 = parseInt(prompt("Saisir un nombre", "0"), 10);
+// let loopcounter9 = nbentered2;
+// let cumulative2 = 1;
+
+// while (loopcounter9 > 0) {
+//     cumulative2 = cumulative2 * loopcounter8;
+//     loopcounter9--;
+// }
+// alert("Factorielle : " + cumulative2);
+
+// /////////////////
+// // Exercise 1.7b
+// /////////////////
+// var arr = [];
+// for (var i = 0; i < 5; i++)
+//     arr.push(prompt("Enter a number", "0"));
+// alert("Le plus grand est : " + Math.max(...arr));
+
+// /////////////////
+// // Exercise 1.8
+// /////////////////
+// let nbpartants = parseInt(prompt("Saisir nombre de partants : ", "0"), 10);
+// let nbjoues = parseInt(prompt("Saisir nombre de joués : ", "0"), 10);
+
+// function factorielle(n) {
+//     let loopcounter = n;
+//     let cumulative = 1;
+
+//     while (loopcounter > 0) {
+//         cumulative = cumulative * loopcounter;
+//         loopcounter--;
+//     }
+//     return cumulative;
+
+
+// }
+// let x = factorielle(nbpartants) / factorielle(nbpartants - nbjoues);
+// alert("Une chance de gagner sur : " + x);
+
+// /////////////////
+// // Exercise 2.1
+// /////////////////
+// let arr1 = [];
+// let loopcounter = 0;
+// let consecutive = 1;
+// // debugger;
+
+// while (loopcounter == loopcounter) {
+//     loopcounter++;
+//     arr1.push(prompt("Enter a number (0 to finish)", "0"));
+//     let nber = parseInt(arr1[loopcounter - 1], 10);
+//     if (nber == 0) break;
+//     let currentnb = 0;
+//     let previousnb = 0;
+//     if (loopcounter >= 2) {
+//         currentnb = parseInt(arr1[loopcounter - 1], 10);
+//         previousnb = parseInt(arr1[loopcounter - 2], 10);
+//         if (currentnb !== previousnb + 1) { consecutive = 0; }
+//     }
+// }
+// if (consecutive == 1)
+//     alert("Les nombres sont consécutifs");
+// else
+//     alert("Les nombres ne sont pas consécutifs");
 
 /////////////////
-// Exercise 1.6
+// Exercise 2.2a
 /////////////////
-let nbentered1 = parseInt(prompt("Saisir un nombre", "0"), 10);
-let loopcounter8 = 1;
-let cumulative1 = 0;
-
-while (loopcounter8 <= nbentered1) {
-    cumulative1 = cumulative1 + loopcounter8;
-    loopcounter8++;
-}
-alert(cumulative1);
-
-/////////////////
-// Exercise 1.7a
-/////////////////
-let nbentered2 = parseInt(prompt("Saisir un nombre", "0"), 10);
-let loopcounter9 = nbentered2;
-let cumulative2 = 1;
-
-while (loopcounter9 > 0) {
-    cumulative2 = cumulative2 * loopcounter8;
-    loopcounter9--;
-}
-alert("Factorielle : " + cumulative2);
-
-/////////////////
-// Exercise 1.7b
-/////////////////
-var arr = [];
-for (var i = 0; i < 5; i++)
-    arr.push(prompt("Enter a number", "0"));
-alert("Le plus grand est : " + Math.max(...arr));
-
-/////////////////
-// Exercise 1.8
-/////////////////
-let nbpartants = parseInt(prompt("Saisir nombre de partants : ", "0"), 10);
-let nbjoues = parseInt(prompt("Saisir nombre de joués : ", "0"), 10);
-
-function factorielle(n) {
-    let loopcounter = n;
-    let cumulative = 1;
-
-    while (loopcounter > 0) {
-        cumulative = cumulative * loopcounter;
-        loopcounter--;
-    }
-    return cumulative;
-
-
-}
-let x = factorielle(nbpartants) / factorielle(nbpartants - nbjoues);
-alert("Une chance de gagner sur : " + x);
-
-/////////////////
-// Exercise 2.1
-/////////////////
-let arr = [];
-let loopcounter = 0;
-let consecutive = 1;
-// debugger;
-
-while (loopcounter == loopcounter) {
-    loopcounter++;
-    arr.push(prompt("Enter a number (0 to finish)", "0"));
-    let nber = parseInt(arr[loopcounter - 1], 10);
-    if (nber == 0) break;
-    let currentnb = 0;
-    let previousnb = 0;
-    if (loopcounter >= 2) {
-        currentnb = parseInt(arr[loopcounter - 1], 10);
-        previousnb = parseInt(arr[loopcounter - 2], 10);
-        if (currentnb !== previousnb + 1) { consecutive = 0; }
-    }
-}
-if (consecutive == 1)
-    alert("Les nombres sont consécutifs");
-else
-    alert("Les nombres ne sont pas consécutifs");
-
-/////////////////
-// Exercise 2.2
-/////////////////
-let arr = [];
-let loopcounter = 0;
-let consecutive = 1;
-// debugger;
+let arr1 = [];
+let loopcounter1 = 0;
 
 // Saisie du tableau
-while (loopcounter == loopcounter) {
-    loopcounter++;
-    arr.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
-    let nber = parseInt(arr[loopcounter - 1], 10);
+while (loopcounter1 == loopcounter1) {
+    loopcounter1++;
+    arr1.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
+    let nber = parseInt(arr1[loopcounter1 - 1], 10);
     if (nber == 0) break;
 }
-arr.pop();
-let len = arr.length;
-alert(len + " nombres ont été saisis.");
+arr1.pop();
+let len1 = arr1.length;
+alert(len1 + " nombres ont été saisis.");
 
 // Tri bulle du tableau
-let valj = 0;
-let valjplus = 0;
-let valbuf = 0;
 debugger;
-for (let i = len; i > 0; i--) {
-    for (let j = 0; j < i - 1; j++) {
-        if (arr[j] <= arr[j + 1]) continue;
-        valj = arr[j];
-        valjplus = arr[j + 1];
-        arr[j + 1] = valj;
-        arr[j] = valjplus;
+let valmini = 0;
+let mini = 0;
+for (let i = 0; i <= len1 - 2; i++) {
+    mini = i;
+    for (let j = i + 1; j <= len1 - 1; j++) {
+        if (arr1[j] < arr1[mini]) mini = j;
+    }
+    if (mini !== i) {
+        valmini = arr1[mini];
+        arr1[mini] = arr1[i];
+        arr1[i] = valmini;
     }
 }
 
 // Affichage du tableau
-alert(arr);
+alert(arr1);
+
+// /////////////////
+// // Exercise 2.2b
+// /////////////////
+// let arr2 = [];
+// let loopcounter2 = 0;
+// // debugger;
+
+// // Saisie du tableau
+// while (loopcounter2 == loopcounter2) {
+//     loopcounter2++;
+//     arr2.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
+//     let nber = parseInt(arr2[loopcounter2 - 1], 10);
+//     if (nber == 0) break;
+// }
+// arr2.pop();
+// let len = arr2.length;
+// alert(len + " nombres ont été saisis.");
+
+// // Tri bulle du tableau
+// let valj = 0;
+// let valjplus = 0;
+// for (let i = len; i > 0; i--) {
+//     for (let j = 0; j < i - 1; j++) {
+//         if (arr2[j] <= arr2[j + 1]) continue;
+//         valj = arr2[j];
+//         valjplus = arr2[j + 1];
+//         arr2[j + 1] = valj;
+//         arr2[j] = valjplus;
+//     }
+// }
+
+// // Affichage du tableau
+// alert(arr2);
 
 ///////////////
 // Fin
