@@ -125,44 +125,44 @@ alert("On commence ?");
 // else
 //     alert("Les nombres ne sont pas consécutifs");
 
-/////////////////
-// Exercise 2.2a
-/////////////////
-let arr1 = [];
-let loopcounter1 = 0;
+// /////////////////
+// // Exercise 2.2a (tri par sélection)
+// /////////////////
+// let arr1 = [];
+// let loopcounter1 = 0;
 
-// Saisie du tableau
-while (loopcounter1 == loopcounter1) {
-    loopcounter1++;
-    arr1.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
-    let nber = parseInt(arr1[loopcounter1 - 1], 10);
-    if (nber == 0) break;
-}
-arr1.pop();
-let len1 = arr1.length;
-alert(len1 + " nombres ont été saisis.");
+// // Saisie du tableau
+// while (loopcounter1 == loopcounter1) {
+//     loopcounter1++;
+//     arr1.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
+//     let nber = parseInt(arr1[loopcounter1 - 1], 10);
+//     if (nber == 0) break;
+// }
+// arr1.pop();
+// let len1 = arr1.length;
+// alert(len1 + " nombres ont été saisis.");
 
-// Tri bulle du tableau
-debugger;
-let valmini = 0;
-let mini = 0;
-for (let i = 0; i <= len1 - 2; i++) {
-    mini = i;
-    for (let j = i + 1; j <= len1 - 1; j++) {
-        if (arr1[j] < arr1[mini]) mini = j;
-    }
-    if (mini !== i) {
-        valmini = arr1[mini];
-        arr1[mini] = arr1[i];
-        arr1[i] = valmini;
-    }
-}
+// // Tri du tableau
+// debugger;
+// let valmini = 0;
+// let mini = 0;
+// for (let i = 0; i <= len1 - 2; i++) {
+//     mini = i;
+//     for (let j = i + 1; j <= len1 - 1; j++) {
+//         if (arr1[j] < arr1[mini]) mini = j;
+//     }
+//     if (mini !== i) {
+//         valmini = arr1[mini];
+//         arr1[mini] = arr1[i];
+//         arr1[i] = valmini;
+//     }
+// }
 
-// Affichage du tableau
-alert(arr1);
+// // Affichage du tableau
+// alert(arr1);
 
 // /////////////////
-// // Exercise 2.2b
+// // Exercise 2.2b (Tri à bulles)
 // /////////////////
 // let arr2 = [];
 // let loopcounter2 = 0;
@@ -179,7 +179,7 @@ alert(arr1);
 // let len = arr2.length;
 // alert(len + " nombres ont été saisis.");
 
-// // Tri bulle du tableau
+// // Tri du tableau
 // let valj = 0;
 // let valjplus = 0;
 // for (let i = len; i > 0; i--) {
@@ -194,6 +194,44 @@ alert(arr1);
 
 // // Affichage du tableau
 // alert(arr2);
+
+/////////////////
+// Exercise 2.3
+/////////////////
+let arrini = [];
+let arrinv = [];
+let loopcounter3 = 0;
+
+// Saisie du tableau
+while (loopcounter3 == loopcounter3) {
+    loopcounter3++;
+    arrini.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
+    let nber = parseInt(arrini[loopcounter3 - 1], 10);
+    if (nber == 0) break;
+}
+arrini.pop();
+let lenini = arrini.length;
+alert(lenini + " nombres ont été saisis.");
+
+// // Inversion du tableau (méthode de array)
+// debugger;
+// arrini.reverse()
+
+// Inversion du tableau (algorithme)
+debugger;
+for (let i = lenini - 1; i >= 0; i--) {
+    arrinv.push(arrini[i])
+}
+// Ré-écriture dans le tableau d'origine
+for (let i = 0; i < lenini; i++) {
+    arrini.pop()
+}
+for (let i = 0; i < lenini; i++) {
+    arrini.push(arrinv[i])
+}
+
+// Affichage du tableau
+alert(arrini);
 
 ///////////////
 // Fin
