@@ -260,31 +260,63 @@ alert("On commence ?");
 // alert("Tableau édité :");
 // alert(arr4);
 
-/////////////////
-// Exercise 2.5
-/////////////////
-let arr5 = [];
-let loopcounter5 = 0;
+// /////////////////
+// // Exercise 2.5
+// /////////////////
+// let arr6 = [];
+// let loopcounter5 = 0;
 
-// Saisie du tableau
-while (loopcounter5 == loopcounter5) {
-    loopcounter5++;
-    arr5.push(prompt("Enter a word (0 to finish)", "0"));
-    let nber = parseInt(arr5[loopcounter5 - 1], 10);
-    if (nber == 0) break;
+// // Saisie du tableau
+// while (loopcounter5 == loopcounter5) {
+//     loopcounter5++;
+//     arr5.push(prompt("Enter a word (0 to finish)", "0"));
+//     let nber = parseInt(arr5[loopcounter5 - 1], 10);
+//     if (nber == 0) break;
+// }
+// arr5.pop();
+// let lenini = arr5.length;
+// alert(lenini + " nombres ont été saisis.");
+// alert(arr5);
+
+// let mot = prompt("Mot à rechercher :", "0");
+// const wordindict = (element) => element == mot;
+// if (arr5.findIndex(wordindict) == -1)
+//     alert("Mauvaise orthographe");
+// else
+//     alert("Bonne orthographe");
+// ;
+
+/////////////////
+// Exercise 2.6
+/////////////////
+let arr6 = [];
+let duplicates = false;
+let mot = "";
+
+while (true) {
+    // Saisie du tableau
+    arr6.push(prompt("Enter a word (0 to finish)", "0"));
+    debugger;
+    // Test for exit
+    if (arr6[arr6.length - 1] === "0") break;
+
+    // Test for duplicate
+    for (let index = 0; index < arr6.length - 1; index++) {
+        if (arr6[arr6.length - 1] === arr6[index]) duplicates = true;
+    }
 }
-arr5.pop();
-let lenini = arr5.length;
-alert(lenini + " nombres ont été saisis.");
-alert(arr5);
 
-let mot = prompt("Mot à rechercher :", "0");
-const wordinidct = (element) => element == mot;
-if (arr5.findIndex(wordinidct) == -1)
-    alert("Mauvaise orthographe");
-else
-    alert("Bonne orthographe");
-;
+arr6.pop();
+let lenini = arr6.length;
+alert(lenini + " mots ont été saisis : " + arr6);
+
+if (duplicates === true) {
+    alert("Des doublons");
+}
+else {
+    alert("Pas de doublons");
+    ;
+}
 
 ///////////////
 // Fin
