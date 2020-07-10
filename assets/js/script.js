@@ -233,32 +233,58 @@ alert("On commence ?");
 // // Affichage du tableau
 // alert(arrini);
 
+// /////////////////
+// // Exercise 2.4
+// /////////////////
+// let arr4 = [];
+// let loopcounter4 = 0;
+
+// // Saisie du tableau
+// while (loopcounter4 == loopcounter4) {
+//     loopcounter4++;
+//     arr4.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
+//     let nber = parseInt(arr4[loopcounter4 - 1], 10);
+//     if (nber == 0) break;
+// }
+// arr4.pop();
+// let lenini = arr4.length;
+// alert(lenini + " nombres ont été saisis.");
+// alert(arr4);
+
+// let indexsup = prompt("Index de la valeur à supprimer :", "0");
+
+// // Suppression de la valeur
+// debugger;
+// arr4.splice(indexsup,1);
+
+// alert("Tableau édité :");
+// alert(arr4);
+
 /////////////////
-// Exercise 2.4
+// Exercise 2.5
 /////////////////
-let arr4 = [];
-let loopcounter4 = 0;
+let arr5 = [];
+let loopcounter5 = 0;
 
 // Saisie du tableau
-while (loopcounter4 == loopcounter4) {
-    loopcounter4++;
-    arr4.push(parseInt(prompt("Enter a number (0 to finish)", "0"), 10));
-    let nber = parseInt(arr4[loopcounter4 - 1], 10);
+while (loopcounter5 == loopcounter5) {
+    loopcounter5++;
+    arr5.push(prompt("Enter a word (0 to finish)", "0"));
+    let nber = parseInt(arr5[loopcounter5 - 1], 10);
     if (nber == 0) break;
 }
-arr4.pop();
-let lenini = arr4.length;
+arr5.pop();
+let lenini = arr5.length;
 alert(lenini + " nombres ont été saisis.");
-alert(arr4);
+alert(arr5);
 
-let indexsup = prompt("Index de la valeur à supprimer :", "0");
-
-// Suppression de la valeur
-debugger;
-arr4.splice(indexsup,1);
-
-alert("Tableau édité :");
-alert(arr4);
+let mot = prompt("Mot à rechercher :", "0");
+const wordinidct = (element) => element == mot;
+if (arr5.findIndex(wordinidct) == -1)
+    alert("Mauvaise orthographe");
+else
+    alert("Bonne orthographe");
+;
 
 ///////////////
 // Fin
